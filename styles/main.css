@@ -31,12 +31,26 @@ body{
 	width: 100%;
 
 }
+.current{
+	display: block;
+}
+.fade-slide{
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: .4; }
+    to   { opacity: 1; }
+}
 .imgOverlay{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
-	background: rgba(0,0,0,.5);
+	background: rgba(183,28,28,.5);
 }
 .prev, .next{
 	position: absolute;
@@ -44,6 +58,7 @@ body{
 	padding: 15px;
 	cursor: pointer;
 	font-size: 25px;
+	color: #FFD4D4;
 	z-index: 1;
 }
 .prev{
@@ -53,7 +68,7 @@ body{
 	right: 30px;
 }
 .prev:hover, .next:hover{
-	color:#333;
+	color:#B71C1C;
 }
 .caption{
 	position: absolute;
@@ -121,13 +136,15 @@ body{
 	display: inline-block;
 	width: 15px;
 	height: 15px;
+	margin: 0 2px;
 	cursor: pointer;
-	border:1px solid #FFF;
+	border:1px solid #E93924;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
 }
-.current{
-	background:#333;
-	border:1px solid #F4F4F4;
+
+.active-dot{
+	background:#B71C1C;
+	border:1px solid #E93924;
 }
