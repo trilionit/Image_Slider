@@ -151,9 +151,80 @@ body{
 }
 @media only screen and (max-width: 750px){
 	.slider{
+		position: relative;
 		height: 100%;
 	}
 	.slider img{
 		height: 100%;
+	}
+	.caption{
+		position: absolute;
+		top: 30%;
+		width: 60%;
+		left: 20%;
+		right: 20%;
+	}
+	.caption h3{
+		color: #FFF;
+		padding: 0 10px;
+		font-size: 1.8em;
+		line-height: 1em;
+		margin-bottom: 15px;
+		font-weight: 400;
+	}
+	.caption p{
+		margin: 0 0 20px auto;
+		width: 90%;
+		padding: 10px;
+		color: #fff;
+		font-size: 1em;
+		font-weight: 200;
+
+	}
+	.caption span{
+		font-size: 1em;
+	}
+
+}
+
+@media only screen and (max-width: 650px){
+	.caption{
+		top: 50%;
+		width: 70%;
+		left: 15%;
+		right: 15%;
+		text-align: center;
+	}
+	.caption h3{
+		font-size: 1.3em;
+	}
+	.caption p{
+		display: none;
+
+	}
+
+	.prev, .next{
+		top:40%;
+		font-size: 1em;
+	}
+	.prev{
+		left: 15px;
+	}
+	.next{
+		right: 15px;
+	}
+	.prev:hover, .next:hover{
+		color:#B71C1C;
+	}
+	.caption span{
+		display: none;
+	}
+	.dots-container{
+		top: 80%;
+		width: 100%;
+	}
+	.dots{
+		width: .5em;
+		height: .5em;
 	}
 }
